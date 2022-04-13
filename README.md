@@ -12,8 +12,8 @@ This tool will evolve and take better shape as I continue the journey into C# an
 ---
 
 Currently planned implementations are:
- - ~~One-click Networking Reset (QuickerFix - basic)
- - ~~One-click Networking Reset (QuickFix - the whole kit and kaboodle)
+ - ~~One-click Networking Reset (QuickerFix - basic)~~
+ - ~~One-click Networking Reset (QuickFix - the whole kit and kaboodle)~~
  - About section (Explanation of tools, intended use, etc)
 
 Planned, but might not be possible for a while:
@@ -24,3 +24,12 @@ Planned UI/UX updates:
  - Tidy main UI up
  - Removal of red warning label and its implications.
  - Addition of a "main" main page (move actions behind a selection wall, which doubles up as a confirmation button.)
+
+---
+## Feature list (v0.2.0).
+
+The current staging branch has the following functionality enabled:
+ - Audio service restart (check [here](https://github.com/retr0gr4d3/QuickFix/issues/) for known issues.)
+ - Simple network service restart (using `/release` and `/renew`)
+ - Full network service restart (using the above, combined with `/flushdns` `/registerdns` and `winsock reset`.)
+ - Two debug buttons. One opens a cmd prompt with text using `/K`, the other uses `/C` which hides the prompt.)
