@@ -82,7 +82,7 @@ namespace QuickFix_AIO
 
         }
 
-        private async void btnComingSoon1_Click(object sender, EventArgs e)
+        private void btnComingSoon1_Click(object sender, EventArgs e)
         {
 
         }
