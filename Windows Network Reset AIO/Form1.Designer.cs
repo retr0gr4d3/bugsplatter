@@ -39,22 +39,26 @@
             this.lblCreditTag = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
             this.lblComingSoon1 = new System.Windows.Forms.Label();
-            this.btnComingSoon1 = new System.Windows.Forms.Button();
             this.lblComingSoon2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnNetworkReset2 = new System.Windows.Forms.Button();
             this.btnDebugNo = new System.Windows.Forms.Button();
             this.btnDebugYes = new System.Windows.Forms.Button();
             this.lblDebugNo = new System.Windows.Forms.Label();
             this.lblDebugYes = new System.Windows.Forms.Label();
+            this.lblNetworkReset = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnResetNetFull = new System.Windows.Forms.Button();
+            this.lblFixNetQuicker = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnResetAudiosrv
             // 
-            this.btnResetAudiosrv.Location = new System.Drawing.Point(316, 113);
+            this.btnResetAudiosrv.Location = new System.Drawing.Point(277, 142);
             this.btnResetAudiosrv.Name = "btnResetAudiosrv";
             this.btnResetAudiosrv.Size = new System.Drawing.Size(75, 23);
             this.btnResetAudiosrv.TabIndex = 0;
@@ -65,7 +69,7 @@
             // lblResetAudiosrv
             // 
             this.lblResetAudiosrv.AutoSize = true;
-            this.lblResetAudiosrv.Location = new System.Drawing.Point(397, 118);
+            this.lblResetAudiosrv.Location = new System.Drawing.Point(358, 147);
             this.lblResetAudiosrv.Name = "lblResetAudiosrv";
             this.lblResetAudiosrv.Size = new System.Drawing.Size(0, 13);
             this.lblResetAudiosrv.TabIndex = 2;
@@ -114,7 +118,7 @@
             // lblAudiosrv
             // 
             this.lblAudiosrv.AutoSize = true;
-            this.lblAudiosrv.Location = new System.Drawing.Point(124, 118);
+            this.lblAudiosrv.Location = new System.Drawing.Point(124, 147);
             this.lblAudiosrv.Name = "lblAudiosrv";
             this.lblAudiosrv.Size = new System.Drawing.Size(147, 13);
             this.lblAudiosrv.TabIndex = 7;
@@ -134,7 +138,7 @@
             // lblCreditTag
             // 
             this.lblCreditTag.AutoSize = true;
-            this.lblCreditTag.Location = new System.Drawing.Point(12, 314);
+            this.lblCreditTag.Location = new System.Drawing.Point(12, 340);
             this.lblCreditTag.Name = "lblCreditTag";
             this.lblCreditTag.Size = new System.Drawing.Size(208, 13);
             this.lblCreditTag.TabIndex = 9;
@@ -143,7 +147,7 @@
             // btnCredits
             // 
             this.btnCredits.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btnCredits.Location = new System.Drawing.Point(316, 84);
+            this.btnCredits.Location = new System.Drawing.Point(277, 89);
             this.btnCredits.Name = "btnCredits";
             this.btnCredits.Size = new System.Drawing.Size(75, 23);
             this.btnCredits.TabIndex = 10;
@@ -153,30 +157,19 @@
             // lblComingSoon1
             // 
             this.lblComingSoon1.AutoSize = true;
-            this.lblComingSoon1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblComingSoon1.Location = new System.Drawing.Point(84, 147);
+            this.lblComingSoon1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblComingSoon1.Location = new System.Drawing.Point(146, 205);
             this.lblComingSoon1.Name = "lblComingSoon1";
-            this.lblComingSoon1.Size = new System.Drawing.Size(187, 13);
+            this.lblComingSoon1.Size = new System.Drawing.Size(125, 13);
             this.lblComingSoon1.TabIndex = 11;
-            this.lblComingSoon1.Text = "[FUTURE] Network Reset QuickFix ->";
+            this.lblComingSoon1.Text = "Network Reset QuickFix.";
             this.lblComingSoon1.Click += new System.EventHandler(this.lblComingSoon1_Click);
-            // 
-            // btnComingSoon1
-            // 
-            this.btnComingSoon1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btnComingSoon1.Location = new System.Drawing.Point(316, 142);
-            this.btnComingSoon1.Name = "btnComingSoon1";
-            this.btnComingSoon1.Size = new System.Drawing.Size(75, 23);
-            this.btnComingSoon1.TabIndex = 12;
-            this.btnComingSoon1.Text = "DISABLED";
-            this.btnComingSoon1.UseVisualStyleBackColor = true;
-            this.btnComingSoon1.Click += new System.EventHandler(this.btnComingSoon1_Click);
             // 
             // lblComingSoon2
             // 
             this.lblComingSoon2.AutoSize = true;
             this.lblComingSoon2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblComingSoon2.Location = new System.Drawing.Point(60, 176);
+            this.lblComingSoon2.Location = new System.Drawing.Point(12, 258);
             this.lblComingSoon2.Name = "lblComingSoon2";
             this.lblComingSoon2.Size = new System.Drawing.Size(211, 13);
             this.lblComingSoon2.TabIndex = 13;
@@ -186,26 +179,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label2.Location = new System.Drawing.Point(12, 89);
+            this.label2.Location = new System.Drawing.Point(12, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(259, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "See about for explanations on command functionality.";
             // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(316, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 238);
+            this.label1.Location = new System.Drawing.Point(12, 284);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(506, 13);
             this.label1.TabIndex = 16;
@@ -216,25 +199,26 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(12, 205);
+            this.label3.Location = new System.Drawing.Point(12, 271);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(273, 13);
             this.label3.TabIndex = 17;
             this.label3.Text = "[IDEA] CN:SpaceMaker - cleans TEMP files with a click.";
             // 
-            // button3
+            // btnNetworkReset2
             // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Location = new System.Drawing.Point(316, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "IDEA";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNetworkReset2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnNetworkReset2.Location = new System.Drawing.Point(277, 171);
+            this.btnNetworkReset2.Name = "btnNetworkReset2";
+            this.btnNetworkReset2.Size = new System.Drawing.Size(75, 23);
+            this.btnNetworkReset2.TabIndex = 18;
+            this.btnNetworkReset2.Text = "Basic";
+            this.btnNetworkReset2.UseVisualStyleBackColor = true;
+            this.btnNetworkReset2.Click += new System.EventHandler(this.btnNetworkReset2_Click);
             // 
             // btnDebugNo
             // 
-            this.btnDebugNo.Location = new System.Drawing.Point(15, 271);
+            this.btnDebugNo.Location = new System.Drawing.Point(12, 300);
             this.btnDebugNo.Name = "btnDebugNo";
             this.btnDebugNo.Size = new System.Drawing.Size(75, 23);
             this.btnDebugNo.TabIndex = 19;
@@ -244,7 +228,7 @@
             // 
             // btnDebugYes
             // 
-            this.btnDebugYes.Location = new System.Drawing.Point(484, 271);
+            this.btnDebugYes.Location = new System.Drawing.Point(483, 300);
             this.btnDebugYes.Name = "btnDebugYes";
             this.btnDebugYes.Size = new System.Drawing.Size(75, 23);
             this.btnDebugYes.TabIndex = 20;
@@ -255,7 +239,7 @@
             // lblDebugNo
             // 
             this.lblDebugNo.AutoSize = true;
-            this.lblDebugNo.Location = new System.Drawing.Point(96, 276);
+            this.lblDebugNo.Location = new System.Drawing.Point(93, 305);
             this.lblDebugNo.Name = "lblDebugNo";
             this.lblDebugNo.Size = new System.Drawing.Size(87, 13);
             this.lblDebugNo.TabIndex = 21;
@@ -264,28 +248,87 @@
             // lblDebugYes
             // 
             this.lblDebugYes.AutoSize = true;
-            this.lblDebugYes.Location = new System.Drawing.Point(447, 276);
+            this.lblDebugYes.Location = new System.Drawing.Point(446, 305);
             this.lblDebugYes.Name = "lblDebugYes";
             this.lblDebugYes.Size = new System.Drawing.Size(31, 13);
             this.lblDebugYes.TabIndex = 22;
             this.lblDebugYes.Text = "open";
             // 
+            // lblNetworkReset
+            // 
+            this.lblNetworkReset.AutoSize = true;
+            this.lblNetworkReset.Location = new System.Drawing.Point(358, 205);
+            this.lblNetworkReset.Name = "lblNetworkReset";
+            this.lblNetworkReset.Size = new System.Drawing.Size(0, 13);
+            this.lblNetworkReset.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(137, 176);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(134, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Network Reset QuickerFix.";
+            // 
+            // btnResetNetFull
+            // 
+            this.btnResetNetFull.Location = new System.Drawing.Point(277, 200);
+            this.btnResetNetFull.Name = "btnResetNetFull";
+            this.btnResetNetFull.Size = new System.Drawing.Size(75, 23);
+            this.btnResetNetFull.TabIndex = 26;
+            this.btnResetNetFull.Text = "Full";
+            this.btnResetNetFull.UseVisualStyleBackColor = true;
+            this.btnResetNetFull.Click += new System.EventHandler(this.btnResetNetFull_Click);
+            // 
+            // lblFixNetQuicker
+            // 
+            this.lblFixNetQuicker.AutoSize = true;
+            this.lblFixNetQuicker.Location = new System.Drawing.Point(358, 176);
+            this.lblFixNetQuicker.Name = "lblFixNetQuicker";
+            this.lblFixNetQuicker.Size = new System.Drawing.Size(0, 13);
+            this.lblFixNetQuicker.TabIndex = 27;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 118);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(223, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "There is an issue with the audio solution. See:";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(232, 118);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(48, 13);
+            this.linkLabel1.TabIndex = 29;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Issue #1";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 336);
+            this.ClientSize = new System.Drawing.Size(570, 362);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblFixNetQuicker);
+            this.Controls.Add(this.btnResetNetFull);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblNetworkReset);
             this.Controls.Add(this.lblDebugYes);
             this.Controls.Add(this.lblDebugNo);
             this.Controls.Add(this.btnDebugYes);
             this.Controls.Add(this.btnDebugNo);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnNetworkReset2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblComingSoon2);
-            this.Controls.Add(this.btnComingSoon1);
             this.Controls.Add(this.lblComingSoon1);
             this.Controls.Add(this.btnCredits);
             this.Controls.Add(this.lblCreditTag);
@@ -319,17 +362,21 @@
         private System.Windows.Forms.Label lblCreditTag;
         private System.Windows.Forms.Button btnCredits;
         private System.Windows.Forms.Label lblComingSoon1;
-        private System.Windows.Forms.Button btnComingSoon1;
         private System.Windows.Forms.Label lblComingSoon2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnNetworkReset2;
         private System.Windows.Forms.Button btnDebugNo;
         private System.Windows.Forms.Button btnDebugYes;
         private System.Windows.Forms.Label lblDebugNo;
         private System.Windows.Forms.Label lblDebugYes;
+        private System.Windows.Forms.Label lblNetworkReset;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnResetNetFull;
+        private System.Windows.Forms.Label lblFixNetQuicker;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

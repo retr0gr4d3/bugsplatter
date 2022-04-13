@@ -82,11 +82,6 @@ namespace QuickFix_AIO
 
         }
 
-        private void btnComingSoon1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lnklblGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/retr0gr4d3/QuickFix/issues");
@@ -106,6 +101,58 @@ namespace QuickFix_AIO
             string strCmdText3;
             strCmdText3 = "/c echo debug"; //opens debug
             System.Diagnostics.Process.Start("CMD.exe", strCmdText3);
+        }
+
+        private void btnNetworkReset2_Click(object sender, EventArgs e)
+        { 
+            lblFixNetQuicker.Text = "/release...";
+            string strCmdText2;
+            strCmdText2 = "/K ipconfig /release"; //release
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText2);
+            wait(5000); //wait four seconds
+            lblFixNetQuicker.Text = "/renew...";
+            string strCmdText3;
+            strCmdText3 = "/K ipconfig /renew"; //renew
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText3);
+            wait(5000); //wait four seconds
+            lblFixNetQuicker.Text = "Done!";
+            lblFixNetQuicker.ForeColor = System.Drawing.Color.Green;
+        }
+
+        private void btnResetNetFull_Click(object sender, EventArgs e)
+        {
+            lblNetworkReset.Text = "/flushdns...";
+            string strCmdText;
+            strCmdText = "/K ipconfig /flushdns"; //flush dns
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            wait(5000); //wait four seconds
+            lblNetworkReset.Text = "/registerdns...";
+            string strCmdText1;
+            strCmdText1 = "/K ipconfig /registerdns"; //register dns
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText1);
+            wait(5000); //wait four seconds
+            lblNetworkReset.Text = "/release...";
+            string strCmdText2;
+            strCmdText2 = "/K ipconfig /release"; //release
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText2);
+            wait(5000); //wait four seconds
+            lblNetworkReset.Text = "/renew...";
+            string strCmdText3;
+            strCmdText3 = "/K ipconfig /renew"; //renew
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText3);
+            wait(5000); //wait four seconds
+            lblNetworkReset.Text = "Please restart.";
+            string strCmdText4;
+            strCmdText4 = "/K netsh winsock reset"; //reset winsock
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText4);
+            wait(5000); //wait four seconds
+            lblNetworkReset.Text = "Done!";
+            lblNetworkReset.ForeColor = System.Drawing.Color.Green;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/retr0gr4d3/QuickFix/issues/1");
         }
     }
 }
