@@ -1,11 +1,13 @@
 # QuickFix (WIP)
 QuickFix (working title) is an easy troubleshooter for Windows-based bugs and glitches.
 
-The files contained here do not represent the final product. Proceed with caution, always check the source. I cannot confirm whether any forks or branches of this project are safe.
+## The files contained here do not represent the final product. Proceed with caution, always check the source. I cannot confirm whether any forks or branches of this project are safe.
 
 This project uses the CMD utility to "shortcut" the process of manual problem solving in Windows. It is intended to help users who do not know how to fix certain issues in Windows from audio bugs to networking issues and freeing storage space by properly emptying temp folders and directories.
 
 This tool will evolve and take better shape as I continue the journey into C# and .NET.
+
+---
 
 Currently planned implementations are:
  - One-click Networking Reset (QuickerFix - basic)
