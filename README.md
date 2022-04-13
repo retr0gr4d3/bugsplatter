@@ -1,4 +1,4 @@
-# QuickFix (WIP)
+# QuickFix
 QuickFix (working title) is an easy troubleshooter for Windows-based bugs and glitches.
 
 ## The files contained here do not represent the final product. Proceed with caution, always check the source. I cannot confirm whether any forks or branches of this project are safe.
