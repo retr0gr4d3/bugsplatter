@@ -12,12 +12,13 @@ This tool will evolve and take better shape as I continue the journey into C# an
 ---
 
 Currently planned implementations are:
- - One-click Networking Reset (QuickerFix - basic)
- - One-click Networking Reset (QuickFix - the whole kit and kaboodle)
+ - ~~One-click Networking Reset (QuickerFix - basic)
+ - ~~One-click Networking Reset (QuickFix - the whole kit and kaboodle)
  - About section (Explanation of tools, intended use, etc)
 
 Planned, but might not be possible for a while:
  - One-click TEMP directory deletions for the main culprit locations.
+ - One-click restart for Explorer.exe for issues related to taskbar and desktop functionality.
 
 Planned UI/UX updates:
  - Tidy main UI up
