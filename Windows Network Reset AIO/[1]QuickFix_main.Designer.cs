@@ -146,13 +146,14 @@
             // 
             // btnCredits
             // 
-            this.btnCredits.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCredits.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCredits.Location = new System.Drawing.Point(277, 89);
             this.btnCredits.Name = "btnCredits";
             this.btnCredits.Size = new System.Drawing.Size(75, 23);
             this.btnCredits.TabIndex = 10;
             this.btnCredits.Text = "About";
             this.btnCredits.UseVisualStyleBackColor = true;
+            this.btnCredits.Click += new System.EventHandler(this.btnCredits_Click);
             // 
             // lblComingSoon1
             // 
@@ -178,7 +179,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(12, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(259, 13);
@@ -232,7 +233,7 @@
             this.btnDebugYes.Name = "btnDebugYes";
             this.btnDebugYes.Size = new System.Drawing.Size(75, 23);
             this.btnDebugYes.TabIndex = 20;
-            this.btnDebugYes.Text = "window";
+            this.btnDebugYes.Text = "tabbedUI";
             this.btnDebugYes.UseVisualStyleBackColor = true;
             this.btnDebugYes.Click += new System.EventHandler(this.btnDebugYes_Click);
             // 

@@ -89,10 +89,9 @@ namespace QuickFix_AIO
 
         private void btnDebugYes_Click(object sender, EventArgs e)
         {
-            lblDebugYes.Text = "done";
-            string strCmdText3;
-            strCmdText3 = "/K echo open debug"; //opens debug
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText3);
+            frmTabbedUI myForm = new frmTabbedUI();
+            myForm.ShowDialog();
+            this.Show();
         }
 
         private void btnDebugNo_Click(object sender, EventArgs e)
@@ -153,6 +152,13 @@ namespace QuickFix_AIO
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/retr0gr4d3/QuickFix/issues/1");
+        }
+
+        private void btnCredits_Click(object sender, EventArgs e)
+        {
+            frmQuickFixAbout myForm = new frmQuickFixAbout();
+            myForm.ShowDialog();
+            this.Show();
         }
     }
 }

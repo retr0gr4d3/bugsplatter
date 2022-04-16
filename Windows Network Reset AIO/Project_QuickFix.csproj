@@ -98,16 +98,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="[2]AboutQuickFix.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="[2]AboutQuickFix.Designer.cs">
+      <DependentUpon>[2]AboutQuickFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[99]QuickFix_testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="[99]QuickFix_testing.Designer.cs">
+      <DependentUpon>[99]QuickFix_testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="[1]QuickFix_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="[1]QuickFix_main.Designer.cs">
+      <DependentUpon>[1]QuickFix_main.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="[1]QuickFix_main.resx">
+      <DependentUpon>[1]QuickFix_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[2]AboutQuickFix.resx">
+      <DependentUpon>[2]AboutQuickFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[99]QuickFix_testing.resx">
+      <DependentUpon>[99]QuickFix_testing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
