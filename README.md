@@ -1,23 +1,18 @@
 # QuickFix (WIP)
 QuickFix (working title) is an easy troubleshooter for Windows-based bugs and glitches.
 
-## The files contained here do not represent the final product. Proceed with caution, always check the source. I cannot confirm whether any forks or branches of this project are safe.
+## The project files will be hosted in [the current working branch](https://github.com/retr0gr4d3/QuickFix/tree/staging-beta) until v1 is ready.
 
-This project uses the CMD utility to "shortcut" the process of manual problem solving in Windows. It is intended to help users who do not know how to fix certain issues in Windows from audio bugs to networking issues and freeing storage space by properly emptying temp folders and directories.
-
-This tool will evolve and take better shape as I continue the journey into C# and .NET.
+This project uses C# and the .NET Framework to create an application which (hopefully) helps the user to solve common Windows problems, from sound to solving the [missing Windows Security application which occurrs due to Windows Insider](https://answers.microsoft.com/en-us/windows/forum/all/windows-security-missing/827b934c-c95e-4ea1-880b-529729747c96).
 
 ---
 
-Currently planned implementations are:
- - One-click Networking Reset (QuickerFix - basic)
- - One-click Networking Reset (QuickFix - the whole kit and kaboodle)
- - About section (Explanation of tools, intended use, etc)
-
-Planned, but might not be possible for a while:
- - One-click TEMP directory deletions for the main culprit locations.
-
-Planned UI/UX updates:
- - Tidy main UI up
- - Removal of red warning label and its implications.
- - Addition of a "main" main page (move actions behind a selection wall, which doubles up as a confirmation button.)
+The end goal is to have an application that contains the following:
+- One-click button for audio problem solving. [See issue #1](https://github.com/retr0gr4d3/QuickFix/issues/1).
+- One-click button for the aforementioned issue.
+- One-click no-reboot button for network reset.
+- One-click advised-reboot button for network reset.
+- One-click task-restart button for Explorer.exe.
+- One-click temp folder clean button for extra space.
+- One-click reinstall button for Windows Security.
+- One-click button for multiple registry tweaks.
