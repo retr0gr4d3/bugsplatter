@@ -98,11 +98,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="[2]AboutQuickFix.cs">
+    <Compile Include="[2]QuickFix_about.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="[2]AboutQuickFix.Designer.cs">
-      <DependentUpon>[2]AboutQuickFix.cs</DependentUpon>
+    <Compile Include="[2]QuickFix_about.Designer.cs">
+      <DependentUpon>[2]QuickFix_about.cs</DependentUpon>
     </Compile>
     <Compile Include="[99]QuickFix_testing.cs">
       <SubType>Form</SubType>
@@ -121,8 +121,8 @@
     <EmbeddedResource Include="[1]QuickFix_main.resx">
       <DependentUpon>[1]QuickFix_main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="[2]AboutQuickFix.resx">
-      <DependentUpon>[2]AboutQuickFix.cs</DependentUpon>
+    <EmbeddedResource Include="[2]QuickFix_about.resx">
+      <DependentUpon>[2]QuickFix_about.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="[99]QuickFix_testing.resx">
       <DependentUpon>[99]QuickFix_testing.cs</DependentUpon>
