@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,14 +49,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="[3]Reboot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="[3]Reboot.Designer.cs">
+      <DependentUpon>[3]Reboot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[2]Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="[2]Main.Designer.cs">
+      <DependentUpon>[2]Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[1]UpdateCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="[1]UpdateCheck.Designer.cs">
+      <DependentUpon>[1]UpdateCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="[2]Main.resx">
+      <DependentUpon>[2]Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[1]UpdateCheck.resx">
+      <DependentUpon>[1]UpdateCheck.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +84,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="[3]Reboot.resx">
+      <DependentUpon>[3]Reboot.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
