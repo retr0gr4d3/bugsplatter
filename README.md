@@ -1,18 +1,11 @@
-# QuickFix (WIP)
-QuickFix (working title) is an easy troubleshooter for Windows-based bugs and glitches.
+# Bugsplatter (WIP)
+Bugsplatter (working title) is an easy troubleshooter for Windows-based bugs and glitches.
+---
 
-## The project files will be hosted in [the current working branch](https://github.com/retr0gr4d3/QuickFix/tree/staging-beta) until v1 is ready.
+A strange behaviour has been observed ad for the first time, the pre-built EXE in releases was flagged by Windows Defender and an Anti-virus as "Trojan:Win32/Sabsik.TE.A!ml". This doesn't happen when the source is compiled manually and was only observed on one PC, someone else downloaded the EXE and it didn't flag. I'm assuming this was related to the individual's personal configuration, as nobody else has reported this so far. Personally I believe that software should always be transparent, so if you see anything about "Sabsik.TE.A!ml", know that this is a false positive and do not be alarmed. You can view and compile the source code yourself, as the entire project is stored here. The EXE in releases is entirely optional, and it is encouraged the user compiles from this source rather than downloading the EXE anyway.
 
-This project uses C# and the .NET Framework to create an application which (hopefully) helps the user to solve common Windows problems, from sound to solving the [missing Windows Security application which occurrs due to Windows Insider](https://answers.microsoft.com/en-us/windows/forum/all/windows-security-missing/827b934c-c95e-4ea1-880b-529729747c96).
+**TL;DR YMMV. If you get warned about a Trojan, please open an issue. If an issue exists, please do not open copies. You may continue to use the downloadable EXE if you trust it enough, else you can compile it yourelf.
 
 ---
 
-The end goal is to have an application that contains the following:
-- One-click button for audio problem solving. [See issue #1](https://github.com/retr0gr4d3/QuickFix/issues/1).
-- One-click button for the aforementioned issue.
-- One-click no-reboot button for network reset.
-- One-click advised-reboot button for network reset.
-- One-click task-restart button for Explorer.exe.
-- One-click temp folder clean button for extra space.
-- One-click reinstall button for Windows Security.
-- One-click button for multiple registry tweaks.
+This will be filled out soon:tm:
