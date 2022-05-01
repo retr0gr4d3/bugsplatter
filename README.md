@@ -1,5 +1,6 @@
-# Bugsplatter (WIP)
-Bugsplatter (working title) is an easy troubleshooter for Windows-based bugs and glitches.
+# Bugsplatter is a work in progress.
+
+Please ensure you have read this readme before continuing.
 
 ---
 
